@@ -2,15 +2,7 @@
 import { connect } from 'cloudflare:sockets';
 
 let userID = 'b19cd47d-8a9c-4606-985a-f8d0046ef306';
-//let proxyIP = '8.25.82.150';
-//let proxyIP = '193.122.58.197';
-//let proxyIP = '[2a01:4f8:c2c:123f:64:5:ac40:6c0a]';
-//const proxyIPs = ['23.162.136.169', 'cdn.xn--b6gac.eu.org', 'cdn-all.xn--b6gac.eu.org', 'edgetunnel.anycast.eu.org'];
-const proxyIPs = ['cdn.xn--b6gac.eu.org', 'cdn-all.xn--b6gac.eu.org', 'edgetunnel.anycast.eu.org','[2a01:4f8:c2c:123f:64:5:ac40:6d0a]', '[2a01:4f8:c2c:123f:64:5:ac40:6c0a]', '[2a00:1098:2b::1:ac40:6d0a]', '[2a00:1098:2b::1:ac40:6c0a]', '[2a00:1098:2c::5:ac40:6c0a]', '[2a00:1098:2c::5:ac40:6d0a]', 'proxyip.aliyun.fxxk.dedyn.io', 'proxyip.oracle.fxxk.dedyn.io', 'proxyip.fxxk.dedyn.io', 'proxyip.sg.fxxk.dedyn.io', 'proxyip.jp.fxxk.dedyn.io', 'proxyip.hk.fxxk.dedyn.io'];
-let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
-
-// 生成配置文件的 CF 优选 IP
-const bestCFIP = "www.gov.se"
+let proxyIP = 'edgetunnel.anycast.eu.org';
 let sub = '';
 let subConverter = 'SUBAPI.fxxk.dedyn.io';
 let subConfig = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_MultiMode.ini";
