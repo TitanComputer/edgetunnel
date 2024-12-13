@@ -3,7 +3,7 @@ import { connect } from 'cloudflare:sockets';
 
 let userID = 'b19cd47d-8a9c-4606-985a-f8d0046ef306';
 const proxyIPP = ['cdn.xn--b6gac.eu.org', 'cdn-all.xn--b6gac.eu.org', 'edgetunnel.anycast.eu.org','[2a01:4f8:c2c:123f:64:5:ac40:6d0a]', '[2a01:4f8:c2c:123f:64:5:ac40:6c0a]', '[2a00:1098:2b::1:ac40:6d0a]', '[2a00:1098:2b::1:ac40:6c0a]', '[2a00:1098:2c::5:ac40:6c0a]', '[2a00:1098:2c::5:ac40:6d0a]', 'proxyip.aliyun.fxxk.dedyn.io', 'proxyip.oracle.fxxk.dedyn.io', 'proxyip.fxxk.dedyn.io', 'proxyip.sg.fxxk.dedyn.io', 'proxyip.jp.fxxk.dedyn.io', 'proxyip.hk.fxxk.dedyn.io'];
-let proxyIP = proxyIPP[Math.floor(Math.random() * proxyIPs.length)];
+let proxyIP = proxyIPP[Math.floor(Math.random() * proxyIPP.length)];
 let sub = '';
 let subConverter = 'SUBAPI.fxxk.dedyn.io';
 let subConfig = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_MultiMode.ini";
